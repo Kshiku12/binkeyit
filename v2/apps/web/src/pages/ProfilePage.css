@@ -1,0 +1,448 @@
+.profile-container {
+  min-height: 100vh;
+  background: radial-gradient(circle at top right, var(--brand-green-light), var(--bg-color), var(--brand-green-light));
+  padding: 40px 20px 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-glass-card {
+  max-width: 900px;
+  width: 100%;
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-color);
+  border-radius: 32px;
+  box-shadow: var(--card-shadow);
+  padding: 40px;
+  animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* User Header */
+.user-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding-bottom: 32px;
+}
+
+.avatar-large {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--brand-green) 0%, #059669 100%);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 800;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2);
+}
+
+.rating-badge {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  background: #000;
+  color: #fbbf24;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.user-details-text h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--text-dark);
+  letter-spacing: -1px;
+}
+
+.user-meta {
+  margin: 4px 0 0 0;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.dashboard-item {
+  padding: 24px;
+  border-radius: 24px;
+  background: var(--card-bg);
+  border: 1px solid rgba(0,0,0,0.03);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.02);
+  transition: transform 0.3s ease;
+}
+
+.dashboard-item:hover {
+  transform: translateY(-5px);
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #9ca3af;
+}
+
+.item-header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-dark);
+  font-weight: 800;
+}
+
+/* Wallet Specific */
+.wallet-card {
+  background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+  color: #fff;
+}
+
+.wallet-card h3 { color: #9ca3af; }
+
+.wallet-balance {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.wallet-balance .currency {
+  font-size: 1.5rem;
+  color: var(--brand-green);
+  font-weight: 800;
+}
+
+.wallet-balance .amount {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.add-money-trigger {
+  width: 100%;
+  background: var(--brand-green);
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 14px;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.2);
+}
+
+.add-money-trigger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(16, 185, 129, 0.3);
+  background: #059669;
+}
+
+/* Edit Profile Styles */
+.edit-toggle-btn {
+  background: var(--brand-green-light);
+  color: var(--brand-green);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit-toggle-btn:hover {
+  background: var(--brand-green);
+  color: #fff;
+}
+
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.edit-input {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-dark);
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+}
+
+.edit-input:focus {
+  border-color: var(--brand-green);
+  box-shadow: 0 0 0 3px var(--brand-green-light);
+}
+
+.edit-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.save-btn {
+  background: var(--brand-green);
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Stats Row */
+.stats-row {
+  display: flex;
+  gap: 32px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--text-dark);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+/* Orders List */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: var(--text-dark);
+}
+
+.order-history-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(0,0,0,0.04);
+  transition: all 0.3s;
+}
+
+.order-history-card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.order-card-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-id {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.order-date {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.order-items-preview {
+  font-size: 0.9rem;
+  color: #4b5563;
+  font-weight: 600;
+  max-width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.order-card-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.order-amount {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--text-dark);
+}
+
+.order-status-badge {
+  padding: 4px 12px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.order-status-badge.delivered { background: #d1fae5; color: #065f46; }
+.order-status-badge.cancelled { background: #fee2e2; color: #991b1b; }
+.order-status-badge.placed, .order-status-badge.confirmed { background: #e0f2fe; color: #075985; }
+
+.view-details-btn {
+  font-size: 0.85rem;
+  color: var(--brand-green);
+  text-decoration: none;
+  font-weight: 800;
+  margin-top: 4px;
+}
+
+.loading-screen {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand-green);
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .user-profile-header { flex-direction: column; text-align: center; }
+  .order-card-main { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .order-card-right { align-items: flex-start; text-align: left; }
+}
+
+/* Wallet History */
+.wallet-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tx-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 16px 20px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.tx-card:hover {
+  border-color: var(--brand-green);
+  transform: translateX(4px);
+}
+
+.tx-left {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.tx-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--brand-green-light);
+  color: var(--brand-green);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.tx-type {
+  font-weight: 800;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.tx-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.tx-amount {
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.tx-amount.plus { color: var(--brand-green); }
+.tx-amount.minus { color: #ef4444; }
+
+/* Payment Overlay & Spinner */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid var(--brand-green-light);
+  border-top: 4px solid var(--brand-green);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.success-check {
+  width: 60px;
+  height: 60px;
+  background: var(--brand-green);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 900;
+  box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+  animation: scaleUp 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@keyframes scaleUp { from { transform: scale(0); } to { transform: scale(1); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+[data-theme='dark'] .payment-overlay {
+  background: rgba(15, 23, 42, 0.98) !important;
+}
+
+[data-theme='dark'] .payment-overlay h3 {
+  color: #f8fafc !important;
+}

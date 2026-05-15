@@ -1,0 +1,129 @@
+{
+  "categories": [
+    {
+      "name": "Atta, Rice & Dal",
+      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&q=80"
+    },
+    {
+      "name": "Dairy, Bread & Eggs",
+      "image": "https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=600&q=80"
+    },
+    {
+      "name": "Cold Drinks & Juices",
+      "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=600&q=80"
+    },
+    {
+      "name": "Snacks & Munchies",
+      "image": "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=600&q=80"
+    },
+    {
+      "name": "Fruits & Vegetables",
+      "image": "https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=600&q=80"
+    }
+  ],
+  "products": {
+    "Atta, Rice & Dal": [],
+    "Dairy, Bread & Eggs": [],
+    "Cold Drinks & Juices": [
+      {
+        "name": "Sprite",
+        "unit": "600 ml",
+        "price": 139,
+        "image": "https://images.openfoodfacts.org/images/products/890/176/403/2707/front_en.20.400.jpg"
+      },
+      {
+        "name": "Pepsi",
+        "unit": "400ml",
+        "price": 275,
+        "image": "https://images.openfoodfacts.org/images/products/890/208/010/4581/front_en.3.400.jpg"
+      },
+      {
+        "name": "Coca-Cola",
+        "unit": "250 ml",
+        "price": 257,
+        "image": "https://images.openfoodfacts.org/images/products/890/176/401/2914/front_en.29.400.jpg"
+      },
+      {
+        "name": "Classic Lemonade",
+        "unit": "1 pc",
+        "price": 225,
+        "image": "https://images.openfoodfacts.org/images/products/890/801/374/6101/front_en.5.400.jpg"
+      },
+      {
+        "name": "Limonata",
+        "unit": "160 ml",
+        "price": 289,
+        "image": "https://images.openfoodfacts.org/images/products/890/601/729/1429/front_en.7.400.jpg"
+      },
+      {
+        "name": "Bisleri Limonata",
+        "unit": "600 ml",
+        "price": 121,
+        "image": "https://images.openfoodfacts.org/images/products/890/601/729/0965/front_en.3.400.jpg"
+      }
+    ],
+    "Snacks & Munchies": [
+      {
+        "name": "Masala Munch",
+        "unit": "44g",
+        "price": 256,
+        "image": "https://images.openfoodfacts.org/images/products/890/149/136/1026/front_en.51.400.jpg"
+      },
+      {
+        "name": "Haldiram Lite Chiwda",
+        "unit": "200 g",
+        "price": 224,
+        "image": "https://images.openfoodfacts.org/images/products/890/400/440/0601/front_en.14.400.jpg"
+      },
+      {
+        "name": "Masala Banana Chips",
+        "unit": "170gm",
+        "price": 101,
+        "image": "https://images.openfoodfacts.org/images/products/890/407/170/0031/front_en.24.400.jpg"
+      },
+      {
+        "name": "Unibic Choco Chip Cookies",
+        "unit": "100 g",
+        "price": 67,
+        "image": "https://images.openfoodfacts.org/images/products/890/600/907/9165/front_en.3.400.jpg"
+      },
+      {
+        "name": "Tiger Krunch ChocoChips",
+        "unit": "63 g",
+        "price": 209,
+        "image": "https://images.openfoodfacts.org/images/products/890/106/315/5459/front_en.11.400.jpg"
+      },
+      {
+        "name": "GoodDay Choco Chip",
+        "unit": "100 g",
+        "price": 246,
+        "image": "https://images.openfoodfacts.org/images/products/890/106/300/4122/front_en.3.400.jpg"
+      },
+      {
+        "name": "Hide & Seek Milano Chocolate Chip",
+        "unit": "75g",
+        "price": 215,
+        "image": "https://images.openfoodfacts.org/images/products/890/171/912/5768/front_en.13.400.jpg"
+      },
+      {
+        "name": "Full Toss Baked",
+        "unit": "1 pc",
+        "price": 47,
+        "image": "https://images.openfoodfacts.org/images/products/890/171/912/5683/front_en.3.400.jpg"
+      },
+      {
+        "name": "Choco Fills",
+        "unit": "1 pc",
+        "price": 96,
+        "image": "https://images.openfoodfacts.org/images/products/096/147/501/5275/front_en.3.400.jpg"
+      },
+      {
+        "name": "Happy Happy Choco-Chip Cookies",
+        "unit": "400 g",
+        "price": 168,
+        "image": "https://images.openfoodfacts.org/images/products/890/171/912/2644/front_en.3.400.jpg"
+      }
+    ],
+    "Fruits & Vegetables": []
+  }
+}

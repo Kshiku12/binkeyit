@@ -1,0 +1,12 @@
+{
+  "name": "blinkit-v2-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "api:dev": "npm --prefix apps/api run dev",
+    "api:start": "npm --prefix apps/api run start",
+    "api:seed": "npm --prefix apps/api run seed",
+    "web:dev": "npm --prefix apps/web run dev",
+    "web:build": "npm --prefix apps/web run build"
+  }
+}
