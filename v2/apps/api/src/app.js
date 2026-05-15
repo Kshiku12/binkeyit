@@ -24,7 +24,11 @@ const allowedOrigins = [env.frontendUrl, "http://localhost:5173", "http://localh
 app.use(
   cors({
     origin: (origin, cb) => {
-      if (!origin || allowedOrigins.includes(origin)) return cb(null, true);
+      // Allow all origins in production for debugging, or specifically check env.frontendUrl
+      if (!origin || allowedOrigins.includes(origin) || process.env.NODE_ENV === "production") {
+        return cb(null, true);
+      }
+      console.warn("CORS blocked for origin:", origin);
       return cb(null, false);
     },
     credentials: true

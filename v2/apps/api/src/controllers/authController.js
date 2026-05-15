@@ -149,7 +149,12 @@ export const googleLogin = async (req, res) => {
     return res.json({ success: true, message: "Google login successful", data: { user, ...tokens } });
   } catch (error) {
     console.error("CRITICAL: Google login server error:", error);
-    return res.status(500).json({ success: false, message: "Google login failed on server", error: error.message });
+    return res.status(500).json({ 
+      success: false, 
+      message: "Google login failed on server", 
+      error: error.message,
+      stack: process.env.NODE_ENV === "development" ? error.stack : undefined
+    });
   }
 };
 
